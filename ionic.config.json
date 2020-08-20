@@ -1,0 +1,7 @@
+{
+  "name": "sistemaprestamo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
