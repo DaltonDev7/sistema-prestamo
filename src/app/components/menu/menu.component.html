@@ -6,11 +6,11 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
+
+      <ion-menu-toggle  *ngFor="let item of MenuLabel">
+        <ion-item routerLink="{{item.route}}">{{item.label}}</ion-item>
+      </ion-menu-toggle>
+
     </ion-list>
   </ion-content>
 </ion-menu>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { MenuOpciones } from 'src/app/core/constans/menuOpciones'
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +9,18 @@ import { MenuController } from '@ionic/angular';
 })
 export class MenuComponent implements OnInit {
 
+  //ATRIBUTOS
+  MenuLabel;
+
   constructor(
     public menuController: MenuController
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.MenuLabel = MenuOpciones;
+    console.log(this.MenuLabel)
+   }
+
+
 
 }

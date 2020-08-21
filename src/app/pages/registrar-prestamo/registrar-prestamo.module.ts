@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegistrarPrestamoPageRoutingModule } from './registrar-prestamo-routing.module';
 
 import { RegistrarPrestamoPage } from './registrar-prestamo.page';
+import { ComponentModule } from 'src/app/components/component.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistrarPrestamoPageRoutingModule
+    RegistrarPrestamoPageRoutingModule,
+    ComponentModule
   ],
   declarations: [RegistrarPrestamoPage]
 })
