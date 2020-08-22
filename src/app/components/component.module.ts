@@ -4,7 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 import { NgxUpperCaseDirectiveModule } from 'ngx-upper-case-directive/src';
-
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { NgxUpperCaseDirectiveModule } from 'ngx-upper-case-directive/src';
     CommonModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
-    
+    IonicStorageModule.forRoot()
   ],
   exports:[
     HeaderComponent,

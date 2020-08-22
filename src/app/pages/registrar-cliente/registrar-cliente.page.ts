@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { FormsBuilderService } from 'src/app/core/services/forms-builder.service';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-registrar-cliente',
@@ -14,6 +15,7 @@ export class RegistrarClientePage implements OnInit {
 
   constructor(
    private formsBuilderService : FormsBuilderService,
+   private storage: Storage
   ) { }
 
   ngOnInit() {
@@ -21,6 +23,7 @@ export class RegistrarClientePage implements OnInit {
   }
 
   saveCliente(){
+    this.storage.set("clientes", [this.clienteForm.value])
     console.log('asdas')
   }
 
