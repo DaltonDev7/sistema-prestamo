@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { FormsBuilderService } from 'src/app/core/services/forms-builder.service';
 
 @Component({
   selector: 'app-registrar-cliente',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrarClientePage implements OnInit {
 
-  constructor() { }
+  //ATRIBUTOS
+  clienteForm:FormGroup;
+
+  constructor(
+   private formsBuilderService : FormsBuilderService,
+  ) { }
 
   ngOnInit() {
+  this.clienteForm = this.formsBuilderService.getClienteBuilder();
+  }
+
+  saveCliente(){
+    console.log('asdas')
   }
 
 }

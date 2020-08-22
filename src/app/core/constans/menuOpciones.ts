@@ -3,18 +3,18 @@ import { MenuOpcion } from '../interfaces/menuOpcion';
 
 export const MenuOpciones:MenuOpcion[]= [
     {
-        'icon':'',
+        'icon':'home',
         'label':'Inicio',
         'route':'home'
     },
     {
-       'icon':'',
-       'label':'Registrar Clientes',
+       'icon':'people',
+       'label':'Nuevo Cliente',
        'route':'registrar-cliente'
     },
     {
-        'icon':'',
-        'label':'Registrar Prestamos',
+        'icon':'cash-sharp',
+        'label':'Nuevo Prestamo',
         'route':'registrar-prestamo'
      }
 ]
